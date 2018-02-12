@@ -1,2 +1,18 @@
-Hello World
-终于有自己的80端口的域名了。。。。。。。。。。。。。
+jquery-3.3.1.min.js
+<script src="/js/jquery-3.3.1.min.js"></script>
+hi
+<div onclick="go()">aaaa</div>
+<div id="tmp"></div>
+<script>
+   function go(){
+	   $.ajax({
+		     url: "/api/user/test",
+		       data: {
+			           zipcode: 97201
+					     },
+		         success: function( result ) {
+				     $( "#tmp" ).html( "<strong>" + result + "</strong> degrees" );
+				       }
+	   });
+   }
+</script>
