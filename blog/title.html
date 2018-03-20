@@ -1,0 +1,16 @@
+<% for(var i = 0; i < data.list.length; i++){ %>
+	<div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+               <%= data.list[i].title %>
+              </h2>
+              <h3 class="post-subtitle">
+                <%= data.list[i].title %>
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              <%= data.list[i].createDate %></p>
+          </div>
+          <hr>
+<% } %>
